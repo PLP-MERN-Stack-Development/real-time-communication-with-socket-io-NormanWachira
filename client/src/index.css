@@ -1,0 +1,27 @@
+.chat-container {
+  display: flex;
+}
+
+.userlist {
+  width: 20%;
+  border-right: 1px solid gray;
+}
+
+.chat-area {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .chat-container {
+    flex-direction: column;
+  }
+  .userlist {
+    width: 100% !important;
+    border-right: none;
+    margin-bottom: 1rem;
+  }
+  .chat-area {
+    padding-left: 0 !important;
+  }
+}
